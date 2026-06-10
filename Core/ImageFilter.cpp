@@ -13,7 +13,7 @@ cv::Mat GrayscaleFilter::apply(const cv::Mat& image) const {
 
 cv::Mat NegativeFilter::apply(const cv::Mat& image) const {
     cv::Mat result;
-    cv::bitwise_xor(image, result);
+    cv::bitwise_xor(image,image, result);
     return result;
 }
 

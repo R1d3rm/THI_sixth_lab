@@ -21,7 +21,8 @@ HEADERS += \
 FORMS += \
     UI/MainWindow.ui \
     UI/AddEditDialog.ui
-SOURCES += tests/test_sepia.cpp
+#SOURCES += tests/test_sepia.cpp\
+SOURCES += tests/test_negative.cpp
 
 INCLUDEPATH += "C:/msys64/mingw64/include/opencv4"
 LIBS += -LC:/msys64/mingw64/lib \
