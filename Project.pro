@@ -1,5 +1,5 @@
-QT += core gui widgets
-CONFIG += c++17
+QT += core gui widgets testlib
+CONFIG += c++17 console
 
 SOURCES += \
     main.cpp \
@@ -21,7 +21,7 @@ HEADERS += \
 FORMS += \
     UI/MainWindow.ui \
     UI/AddEditDialog.ui
-
+SOURCES += tests/test_sepia.cpp
 
 INCLUDEPATH += "C:/msys64/mingw64/include/opencv4"
 LIBS += -LC:/msys64/mingw64/lib \
